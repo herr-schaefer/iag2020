@@ -26,7 +26,7 @@ locations = {
         }
     },
     "Wagen 1": {
-        "description": "In diesem Wagen riecht es nach Zigarrenrauch. Im schumrigem Licht sitzen drei lumpige Gestalten an einem Black-Jack Tisch. An der Wand hinter dem Croupier hängt ein Portrait von Georg Washinton. Der Wagon besitzt ausnahmsweise drei Türen. Eine führt in die Zugtoilette.",
+        "description": "In diesem Wagen riecht es nach Zigarrenrauch. Im schummrigem Licht sitzen drei lumpige Gestalten an einem Spieltisch. An der Wand hinter dem Croupier hängt ein Portrait von George Washington. Der Wagon besitzt ausnahmsweise drei Türen. Eine führt in die Zugtoilette.",
         "items": [
             "geldkassette"
         ],
@@ -38,7 +38,7 @@ locations = {
         }
     },
     "Wagen 2": {
-        "description": "Bei diesem Wagen handelt es sich um einen alten Postwagen. Dieser Wagen ist volgestopft mit Paketen von Tante Marta, die ihre Schmiede nach Wyoming umzieht.",
+        "description": "Bei diesem Wagen handelt es sich um einen alten Postwagen. Dieser Wagen ist vollgestopft mit großen Paketen. Der Beschriftung nach zu urteilen sind die meisten davon von Tante Marta, die ihre Schmiede von Colorado nach Wyoming umzieht.",
         "items": [
             "seil",
             "packpapier"
@@ -59,7 +59,7 @@ locations = {
         }
     },
     "Dach Lokomotive": {
-        "description": "Der heiße und rußhaltige Rauch der Lokomotive macht diesen Ort zu einem ungemütlichen Ort. Allerdings läßt sich hier der Stoff aus dem Diamanten sind auflesen. Und um Diamanten geht es hier ja schließlich.",
+        "description": "Der heiße und rußhaltige Rauch der Lokomotive macht das Dach zu einem ungemütlichen Ort. Allerdings lässt sich hier der Stoff, aus dem Diamanten sind, auflesen. Und um Diamanten geht es hier ja schließlich.",
         "items": [
             "Ruß"
         ],
@@ -69,7 +69,7 @@ locations = {
         }
     },
     "Dach Wagen 1": {
-        "description": "Du betritst ein Blechdach. In der vorderen Linken Ecke befindet sich der Abluftschacht der Zugtoilette.",
+        "description": "Du betritst das Blechdach von Wagen 1. In der vorderen, linken Ecke befindet sich der Abluftschacht der Zugtoilette.",
         "items": [
             "Stecknadel"
         ],
@@ -80,7 +80,7 @@ locations = {
         }
     },
     "Dach Wagen 2": {
-        "description": "Das Holzdach knarzt verdächtig unter deinen Füßen. Alles was man sich hier holen kann sind Spreißel. Aber zum glück trägst du ja Cowboystifel aus veganem Kunstleder.",
+        "description": "Das Holzdach knarzt verdächtig unter deinen Füßen. Alles was man sich hier holen kann sind Spreißel. Aber zum Glück trägst du ja Cowboystiefel aus veganem Kunstleder.",
         "items": [
         ],
         "exits": {
@@ -90,7 +90,7 @@ locations = {
         }
     },
     "Dach Wagen 3": {
-        "description": "Ein rostiges Blechdach schmückt diesen Wagen. In der Mitte ist das Blech blauschwarz gefärbt.",
+        "description": "Ein rostiges Blechdach schmückt den letzen Wagen. In der Mitte ist das Blech blauschwarz gefärbt.",
         "items": [
         ],
         "exits": {
@@ -99,12 +99,13 @@ locations = {
         }
     },
     "Zugtoilette": {
-        "description": "Wie zu erwarten riecht es hier wie auf dem Schulklo! Hast du etwas anderes erwartet? An einer Wand hängt ein Portrait von dir mit der Überschwift: 'WANTED DEAD OR ALIVE'",
+        "description": "Wie zu erwarten riecht es hier wie auf dem Schulklo! Hast du etwas anderes erwartet? An einer Wand hängt ein Portrait von dir mit der Überschwift: 'WANTED DEAD OR ALIVE'. Offensichtlich ein Fahndungsplakat.",
         "items": [
-            "Klobürste"
+            "Klobürste",
+            "Plakat",
         ],
         "exits": {
-            "vor": "Wagen 1",
+            "raus": "Wagen 1",
         }
     }
 }
