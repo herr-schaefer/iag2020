@@ -9,7 +9,7 @@
 
 import random
 
-inventory = ["colt", "geisterstein", "kleingeld"]
+inventory = ["Colt", "Geisterstein", "Kleingeld"]
 current_location = "Wagen 3"
 
 
@@ -17,8 +17,8 @@ locations = {
     "Lokomotive": {
         "description": "Ja heiliges Blechle! Eine Pennsylvania D6 treibt diesen Zug an. Ein gewaltiges Dampfross aus dem Jahr 1882. Beeindruckend, das muss man schon sagen. Eine Sache fehlt allerdings, der Lokomotivführer! Wo kann der sein?",
         "items": [
-            "kohlebriketts",
-            "schaufel"
+            "Kohlebriketts",
+            "Schaufel"
         ],
         "exits": {
             "zurück": "Wagen 1",
@@ -28,7 +28,7 @@ locations = {
     "Wagen 1": {
         "description": "In diesem Wagen riecht es nach Zigarrenrauch. Im schummrigem Licht sitzen drei lumpige Gestalten an einem Spieltisch. An der Wand hinter dem Croupier hängt ein Portrait von George Washington. Der Wagon besitzt ausnahmsweise drei Türen. Eine führt in die Zugtoilette.",
         "items": [
-            "geldkassette"
+            "Geldkassette"
         ],
         "exits": {
             "vor": "Lokomotive",
@@ -40,8 +40,8 @@ locations = {
     "Wagen 2": {
         "description": "Bei diesem Wagen handelt es sich um einen alten Postwagen. Dieser Wagen ist vollgestopft mit großen Paketen. Der Beschriftung nach zu urteilen sind die meisten davon von Tante Marta, die ihre Schmiede von Colorado nach Wyoming umzieht.",
         "items": [
-            "seil",
-            "packpapier"
+            "Seil",
+            "Packpapier"
         ],
         "exits": {
             "vor": "Wagen 1",
@@ -185,17 +185,21 @@ while True:
             print('Da geht es nicht weiter!')
 
     if command[0] == 'nimm' :
+        item = command[1].capitalize()
         # If the location has that item...
-        if command[1] in locations[current_location]['items']:
+        if item in locations[current_location]['items']:
             # Add the item to their inventory
-            inventory += [command[1]]
+            inventory += [item]
             # Print a helpful message
-            print("Du hast jetzt:", command[1])
+            print("Du hast jetzt:", item)
             # Remove the item from the location
-            locations[current_location]["items"].remove(command[1])
+            locations[current_location]["items"].remove(item)
         else:
             # Tell player, there is no such item
             print("Hier gibt es kein:", command[1])
+
+    if command[0] == "betrachte":
+        raise NotImplementedError()
 
     if command[0] == 'benutze':
         if current_location == "Wagen 3":
