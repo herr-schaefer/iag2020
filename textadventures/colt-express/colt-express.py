@@ -50,7 +50,7 @@ locations = {
         }
     },
     "Wagen 3": {
-        "description": "Der Wagen hier ist ein alter, verratzter Speisewagen. Es sind keine anderen Passagiere da. In der Ecke steht ein einarmiger Bandit.",
+        "description": "Der Wagen hier ist ein alter, verratzter Speisewagen. Es sind keine anderen Passagiere da. In der Ecke steht ein einarmiger Bandit. Draußen vor dem Fenster brennt die Sonne nieder auf die Prärie.",
         "items": [
         ],
         "exits": {
@@ -148,7 +148,14 @@ def status():
     # If there are items at this location, tell the player about it
     if locations[current_location]["items"]:
         print("Hier liegt auch was rum:", locations[current_location]["items"])
-    print("Du hast:", inventory)
+    # Print the avialable exits
+    print("Hier geht es weiter:")
+    for direction, location in locations[current_location]["exits"].items():
+        print("  ", location, "({})".format(direction))
+    # Print inventory
+    print("Du hast:")
+    for item in inventory:
+        print("  ", item)
 
 
 welcome()
