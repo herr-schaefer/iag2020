@@ -15,7 +15,7 @@ current_location = "Wagen 3"
 
 locations = {
     "Lokomotive": {
-        "description": "Ja heiliges blechle!! Eine preußische P8 treibt diesen Zuga an. Ein gewaltiges Dampfross aus dem Jahr 1913. Beeindrucken, muss man schon sagen. Eine Sache fehtl allerdings, der Lokomotivführer!?",
+        "description": "Ja heiliges Blechle! Eine Pennsylvania D6 treibt diesen Zug an. Ein gewaltiges Dampfross aus dem Jahr 1882. Beeindruckend, das muss man schon sagen. Eine Sache fehlt allerdings, der Lokomotivführer! Wo kann der sein?",
         "items": [
             "kohlebriketts",
             "schaufel"
