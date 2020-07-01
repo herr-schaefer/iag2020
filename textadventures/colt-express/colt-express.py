@@ -180,7 +180,7 @@ while True:
         if command[1] in locations[current_location]["exits"]:
             # Set the current location to the new location
             current_location = locations[current_location]["exits"][command[1]]
-        # ... otherwise, there is exit in that direction.
+        # ... otherwise, there is exit no in that direction.
         else:
             print('Da geht es nicht weiter!')
 
@@ -199,17 +199,17 @@ while True:
             print("Hier gibt es kein:", command[1])
 
     if command[0] == "betrachte":
-        raise NotImplementedError()
+        print("Das geht (noch) nicht.")
 
     if command[0] == 'benutze':
         if current_location == "Wagen 3":
             if command[1] == "bandit":
-                if "kleingeld" in inventory:
+                if "Kleingeld" in inventory:
                     print("Du wirfst einige Münzen in den Automaten und versucht dein Glück.")
-                    inventory.remove("kleingeld")
+                    inventory.remove("Kleingeld")
                     if random.randint(0,1) == 1:
                         print("Du hast Glück und gewinnst einen silbernen Dollar!")
-                        inventory.append("silberdollar")
+                        inventory.append("Silberdollar")
                     else:
                         print("Pech gehabt. Dein Geld ist futsch.")
                 else:
