@@ -8,6 +8,7 @@
 #
 
 import random
+import colt_express_roll
 
 inventory = ["Colt", "Geisterstein", "Kleingeld"]
 current_location = "Wagen 3"
@@ -26,7 +27,7 @@ locations = {
         }
     },
     "Wagen 1": {
-        "description": "In diesem Wagen riecht es nach Zigarrenrauch. Im schummrigem Licht sitzen drei lumpige Gestalten an einem Spieltisch. An der Wand hinter dem Croupier hängt ein Portrait von George Washington. Der Wagon besitzt ausnahmsweise drei Türen. Eine führt in die Zugtoilette.",
+        "description": "In diesem Wagen riecht es nach Zigarrenrauch. Im schummrigen Licht sitzen drei lumpige Gestalten an einem Spieltisch. Einer von ihnen ist Asmus, der Lokomotivführer. An der Wand hinter dem Croupier hängt ein Portrait von George Washington. Der Wagon besitzt ausnahmsweise drei Türen. Eine führt in die Zugtoilette.",
         "items": [
             "Geldkassette"
         ],
@@ -214,6 +215,20 @@ while True:
                         print("Pech gehabt. Dein Geld ist futsch.")
                 else:
                     print("Dafür fehlt dir wohl das nötige Kleingeld.")
+
+        elif current_location == "Wagen 1":
+            if command[1] == "spieltisch":
+                print("Du entschliesst dich Asmus, den Lokomotivführer zu einem Spiel herauszufordern.")
+                result = colt_express_roll.rollGame("Spieler", "Asmus", "Lucky Luke")
+                if result == "win":
+                    print("Sehr gut. Asmus verkrümelt sich in Richtung Lokomotive.")
+                elif result == "lose":
+                    print("Das war wohl nichts!")
+                elif result == "run":
+                    current_location = "Zugtoilette"
+                elif result == "jump":
+                    break
+
         else:
             print("So etwas gibt es hier nicht!")
 
@@ -221,7 +236,8 @@ while True:
         help()
 
     if command[0] == 'ende':
-        print("Bis zum nächsten Mal!")
         break
 
-    print("")
+
+print("Bis zum nächsten Mal!")
+print("")
