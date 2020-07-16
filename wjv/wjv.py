@@ -48,6 +48,8 @@ def print_athlete_list(athletes):
 
 
 if __name__ == "__main__":
+
+    print("\nListe am Anfang:")
     print_athlete_list(athletes)
     sortedByClubsList = []
     random.shuffle(clubs)
@@ -56,12 +58,12 @@ if __name__ == "__main__":
         clublist = [ a for a in athletes if a.club == clubname ]
         sortedByClubsList = sortedByClubsList + clublist
 
-    print("---")
+    print("\nListe nach Vereinen sortiert:")
     print_athlete_list(sortedByClubsList)
     sortedList = [0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15]
     sortedAthletes = []
 
-    print("---")
+    print("\nAthleten in 16er-Liste sortiert:")
     for i in sortedList:
         sortedAthletes.append(sortedByClubsList[i])
     print_athlete_list(sortedAthletes)
