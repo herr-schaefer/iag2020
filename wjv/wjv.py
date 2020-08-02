@@ -13,6 +13,7 @@ class Athlete():
         return self.firstname + " " + self.lastname \
             + " (" + self.club + ", " + str(self.prio) + ")"
 
+# input data
 athletes = [
     Athlete("Zlorf", "Flanellfuß", "Assassinen"),
     Athlete("Samuel", "Mumm", "Stadtwache"),
@@ -34,9 +35,9 @@ athletes = [
 
 def get_clubs_form_athlete_list(athletes): # get all the clubs of athlethes list
     clubs = []
-    for player in athletes:
+    for player in athletes: # loop through all athletes
         club = player.club # get the club of this player
-        if club not in clubs:
+        if club not in clubs: # add the club if it isn't already in the list
             clubs.append(club)
     return clubs
 
@@ -51,7 +52,8 @@ if __name__ == "__main__":
     print_athlete_list(athletes)
     sortedByClubsList = []
     clubs = get_clubs_form_athlete_list(athletes)
-    random.shuffle(clubs)
+    random.shuffle(clubs) #randomize the clubs
+
     # sort by clubs
     for clubname in clubs:
         clublist = [ a for a in athletes if a.club == clubname ]
@@ -59,6 +61,7 @@ if __name__ == "__main__":
 
     print("\nListe nach Vereinen sortiert:")
     print_athlete_list(sortedByClubsList)
+
     # sort by list
     sortedList = [0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15]
     sortedAthletes = []
