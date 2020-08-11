@@ -9,8 +9,13 @@
 
 import random
 import colt_express_roll
+import colt_express_objects as obj
 
-inventory = ["Colt", "Geisterstein", "Kleingeld"]
+inventory = [
+    obj.Item("Colt", "Ein blank polierter Sechsschüsser. Bisher hat er stets gute Dienste geleistet."),
+    obj.Item("Geisterstein", "Ein schwarzer Stein. Er würde an Kohle erinnern, wenn da nicht die weißen Einschlüsse wären."),
+    obj.Item("Kleingeld", "Einige Dimes. Besonders weit kommt man damit nicht.")
+    ]
 current_location = "Wagen 3"
 
 
@@ -18,8 +23,8 @@ locations = {
     "Lokomotive": {
         "description": "Ja heiliges Blechle! Eine Pennsylvania D6 treibt diesen Zug an. Ein gewaltiges Dampfross aus dem Jahr 1882. Beeindruckend, das muss man schon sagen. Eine Sache fehlt allerdings, der Lokomotivführer! Wo kann der sein?",
         "items": [
-            "Kohlebriketts",
-            "Schaufel"
+            obj.Item("Kohle", "Die ist nötig, damit er Zug fährt.", False),
+            obj.Item("Schaufel", "Ein unverzichtbares Werkzeug für den Heizer. Oder ein praktischer Helfer für den Hobbyschatzsucher.")
         ],
         "exits": {
             "zurück": "Wagen 1",
@@ -29,7 +34,7 @@ locations = {
     "Wagen 1": {
         "description": "In diesem Wagen riecht es nach Zigarrenrauch. Im schummrigen Licht sitzen drei lumpige Gestalten an einem Spieltisch. Einer von ihnen ist Asmus, der Lokomotivführer. An der Wand hinter dem Croupier hängt ein Portrait von George Washington. Der Wagon besitzt ausnahmsweise drei Türen. Eine führt in die Zugtoilette.",
         "items": [
-            "Geldkassette"
+            obj.Item("Geldkassette", "Die Kassette besteht aus Stahlblech und macht einen robusten Eindruck.")
         ],
         "exits": {
             "vor": "Lokomotive",
@@ -41,8 +46,8 @@ locations = {
     "Wagen 2": {
         "description": "Bei diesem Wagen handelt es sich um einen alten Postwagen. Dieser Wagen ist vollgestopft mit großen Paketen. Der Beschriftung nach zu urteilen sind die meisten davon von Tante Marta, die ihre Schmiede von Colorado nach Wyoming umzieht.",
         "items": [
-            "Seil",
-            "Packpapier"
+            obj.Item("Seil", "Ein handelsübliches Seil aus Hanffasern"),
+            obj.Item("Packpapier", "Große braune Bögen, die kostbare Ware vor Erschütterungen schützen.")
         ],
         "exits": {
             "vor": "Wagen 1",
@@ -62,7 +67,7 @@ locations = {
     "Dach Lokomotive": {
         "description": "Der heiße und rußhaltige Rauch der Lokomotive macht das Dach zu einem ungemütlichen Ort. Allerdings lässt sich hier der Stoff, aus dem Diamanten sind, auflesen. Und um Diamanten geht es hier ja schließlich.",
         "items": [
-            "Ruß"
+            obj.Item("Ruß", "Das ist also der Stoff, aus dem Diamanten sind.", False)
         ],
         "exits": {
             "zurück": "Dach Wagen 1",
@@ -72,7 +77,7 @@ locations = {
     "Dach Wagen 1": {
         "description": "Du betritst das Blechdach von Wagen 1. In der vorderen, linken Ecke befindet sich der Abluftschacht der Zugtoilette.",
         "items": [
-            "Stecknadel"
+            obj.Item("Stecknadel", "Eine normale Stecknadel. Sollte die nicht eigentlich in einem Heuhaufen sein?")
         ],
         "exits": {
             "vor": "Dach Lokomotive",
@@ -100,10 +105,10 @@ locations = {
         }
     },
     "Zugtoilette": {
-        "description": "Wie zu erwarten riecht es hier wie auf dem Schulklo! Hast du etwas anderes erwartet? An einer Wand hängt ein Portrait von dir mit der Überschwift: 'WANTED DEAD OR ALIVE'. Offensichtlich ein Fahndungsplakat.",
+        "description": "Wie zu erwarten riecht es hier wie auf dem Schulklo! Hast du etwas anderes erwartet?",
         "items": [
-            "Klobürste",
-            "Plakat",
+            obj.Item("Klobürste", "Darauf steht, die Klobürste dürfe bei Bedarf kostenlos verwendet werden."),
+            obj.Item("Plakat", "Es handelt sich um Plakat mit einem Portrait von dir. Jemand hätte dir vor dem Foto einen Kamm geben sollen. Die Überschrift lautet 'WANTED DEAD OR ALIVE'. Offensichtlich ein Fahndungsplakat.")
         ],
         "exits": {
             "raus": "Wagen 1",
@@ -159,6 +164,13 @@ def status():
         print("  ", item)
 
 
+def find_item(title, items):
+    for it in items:
+        if it.title == title:
+            return it
+    raise Exception()
+
+
 welcome()
 
 
@@ -200,7 +212,8 @@ while True:
             print("Hier gibt es kein:", command[1])
 
     if command[0] == "betrachte":
-        print("Das geht (noch) nicht.")
+
+
 
     if command[0] == 'benutze':
         if current_location == "Wagen 3":
