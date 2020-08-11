@@ -2,7 +2,8 @@
 import random
 import csv
 
-csvDataFilePath = "wjv-input.csv"
+ATHLETES_FILE_PATH = "wjv-input.csv"
+
 class Athlete():
 
     def __init__(self, firstname, lastname, club, prio=0):
@@ -15,36 +16,16 @@ class Athlete():
         return self.firstname + " " + self.lastname \
             + " (" + self.club + ", " + str(self.prio) + ")"
 
-# input data in code
-#athletes = [
-#    Athlete("Zlorf", "Flanellfuß", "Assassinen"),
-#    Athlete("Samuel", "Mumm", "Stadtwache"),
-#    Athlete("Karotte", "Eisengießersohn", "Stadtwache"),
-#    Athlete("Kelda", "Aggie", "Kobolde"),
-#    Athlete("Esmeralda", "Wetterwachs", "Hexen"),
-#    Athlete("Delphine Angua", "von Überwald", "Stadtwache"),
-#    Athlete("Rob", "Irgendwer", "Kobolde"),
-#    Athlete("Sally", "Humpeding", "Stadtwache", 1),
-#    Athlete("Gytha", "Ogg", "Hexen"),
-#    Athlete("Mustrum", "Ridcully", "Hexen"),
-#    Athlete("Robert", "Selachii", "Assassinen"),
-#    Athlete("Großer", "Yan", "Kobolde"),
-#    Athlete("Billy", "Breitkinn", "Kobolde"),
-#    Athlete("Mittelgroßer", "Jock", "Kobolde"),
-#    Athlete("Leckerschmeck", "Nivor", "Assassinen"),
-#    Athlete("Kompt", "de Yoyo", "Assassinen")
-#    ]
 
-# get data from a csv file
-
-with open(csvDataFilePath) as athlethesFile:
-    athlethesCSVObj = csv.reader(athlethesFile) # read the file; if there's an error FileNotFoundError is raised
+def load_athletes_from_file(athlethesFilePath):
     athletes = []
-    for athleteRow in athlethesCSVObj:
-        # todo: prio management; checking if csv file is valid, better handling rows: maybe loop through colums?
-        athlete = Athlete(athleteRow[0],athleteRow[1],athleteRow[2])
-        athletes.append(athlete)
-# we now have the athlethes list
+    with open(athlethesFilePath) as athlethesFile:
+        athlethesCSVObj = csv.reader(athlethesFile) # read the file; if there's an error FileNotFoundError is raised
+        for athleteRow in athlethesCSVObj:
+            # todo: prio management; checking if csv file is valid, better handling rows: maybe loop through colums?
+            athlete = Athlete(athleteRow[0],athleteRow[1],athleteRow[2])
+            athletes.append(athlete)
+    return athletes
 
 
 def get_clubs_form_athlete_list(athletes): # get all the clubs of athlethes list
@@ -62,13 +43,17 @@ def print_athlete_list(athletes):
 
 
 if __name__ == "__main__":
+
+    # Load from file
+    athletes = load_athletes_from_file(ATHLETES_FILE_PATH)
+
     print("\nListe am Anfang:")
     print_athlete_list(athletes)
     sortedByClubsList = []
     clubs = get_clubs_form_athlete_list(athletes)
     random.shuffle(clubs) #randomize the clubs
 
-    # sort by clubs
+    # Sort by clubs
     for clubname in clubs:
         clublist = [ a for a in athletes if a.club == clubname ]
         sortedByClubsList = sortedByClubsList + clublist
@@ -76,7 +61,7 @@ if __name__ == "__main__":
     print("\nListe nach Vereinen sortiert:")
     print_athlete_list(sortedByClubsList)
 
-    # sort by list
+    # Sort by list
     sortedList = [0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15]
     sortedAthletes = []
 
