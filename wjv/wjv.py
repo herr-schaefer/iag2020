@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import random
+import htmlwriter as writer
 import csv
 
 ATHLETES_FILE_PATH = "wjv-input.csv"
@@ -13,8 +14,10 @@ class Athlete():
         self.prio = prio
 
     def __repr__(self):
-        return self.firstname + " " + self.lastname \
-            + " (" + self.club + ", " + str(self.prio) + ")"
+        return self.name() + " (" + self.club + ", " + str(self.prio) + ")"
+
+    def name(self):
+        return self.firstname + " " + self.lastname
 
 
 def load_athletes_from_file(athlethesFilePath):
@@ -69,6 +72,8 @@ if __name__ == "__main__":
     for i in sortedList:
         sortedAthletes.append(sortedByClubsList[i])
     print_athlete_list(sortedAthletes)
+
+    writer.create_html_from_list(sortedAthletes)
 
 #0: Zlorf Flanellfuß (Assassinen, 0)
 #1: Mittelgroßer Jock (Kobolde, 0)
