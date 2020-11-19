@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-19T20:10:49.858Z" agent="5.0 (Windows)" etag="z0ee5z3M4LdkYOL9p2TX" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-19T20:15:53.961Z" agent="5.0 (Windows)" etag="e2Bf4BBXI5wWnN4qfUHq" version="13.10.0" type="github">
   <diagram id="XtYsAUKYT_bLAtVYIACI" name="Page-1">
     <mxGraphModel dx="1422" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,20 +28,32 @@
         <mxCell id="lNLITgIDMI_T5WLQpihV-14" value="Gewicht wird von Kampfricher:innen in die Wiegliste eingetragen" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="70" y="220" width="690" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-16" target="lNLITgIDMI_T5WLQpihV-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="lNLITgIDMI_T5WLQpihV-16" value="Kämper:innen nach Vorgaben in Gewichtsklassen einteilen und Wettkampflisten erstellen" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="70" y="270" width="690" height="35" as="geometry" />
         </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-18" target="lNLITgIDMI_T5WLQpihV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="lNLITgIDMI_T5WLQpihV-18" value="Gewichtsklassen einteilung lt. Wettkampfordnung" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="320" width="280" height="30" as="geometry" />
+          <mxGeometry x="430" y="475" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="lNLITgIDMI_T5WLQpihV-19" value="Den Vereinen Losnummern zuteilen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="360" width="280" height="30" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-22" target="lNLITgIDMI_T5WLQpihV-26">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lNLITgIDMI_T5WLQpihV-20" value="Den Vereinen Losnummern zuteilen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="360" width="280" height="30" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-22" value="Kämpferinnen werden entsprechend dem Gewicht in Klassen eingeteilt" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="450" width="320" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="lNLITgIDMI_T5WLQpihV-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="400" width="280" height="30" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-23" target="lNLITgIDMI_T5WLQpihV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-23" value="Vereine bekommen Losnummern" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="350" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-26" value="Wettkampflisten werden besetzt" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="320" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
