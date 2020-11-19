@@ -1,11 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2020-11-19T17:17:09.396Z" agent="5.0 (Windows)" etag="WwCGKoaGELukYa2heRSs" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-19T17:22:56.091Z" agent="5.0 (Windows)" etag="j0cQIzakNrhnIz7TgSWE" version="13.10.0" type="github">
   <diagram id="XtYsAUKYT_bLAtVYIACI" name="Page-1">
     <mxGraphModel dx="1422" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xOCENPFB20Cj9OeKK77U-1" value="&lt;div&gt;Meldedaten von Vereinen&lt;/div&gt;&lt;div&gt;Name/Vorname/Jahrgang/Geschlecht/Gewicht/Priorität&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="30" width="270" height="60" as="geometry" />
+        <mxCell id="xOCENPFB20Cj9OeKK77U-1" value="&lt;div&gt;Meldedaten von Vereinen&lt;/div&gt;&lt;div&gt;Name/Vorname/Jahrgang/Geschlecht/Gewicht/Priorität&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dateiformat *.xlxs&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="30" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xOCENPFB20Cj9OeKK77U-2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xOCENPFB20Cj9OeKK77U-1" target="xOCENPFB20Cj9OeKK77U-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="395" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xOCENPFB20Cj9OeKK77U-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xOCENPFB20Cj9OeKK77U-3" target="xOCENPFB20Cj9OeKK77U-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xOCENPFB20Cj9OeKK77U-3" value="&lt;div&gt;Wiegeliste wird erstellt&lt;/div&gt;Dateiformat *.xlxs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xOCENPFB20Cj9OeKK77U-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xOCENPFB20Cj9OeKK77U-4" target="xOCENPFB20Cj9OeKK77U-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xOCENPFB20Cj9OeKK77U-4" value="Wiegen - Realgewichte werden in Wiegeliste eingetragen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xOCENPFB20Cj9OeKK77U-6" value="Wettkampfgruppen werden zugeordnet" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="430" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
