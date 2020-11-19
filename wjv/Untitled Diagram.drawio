@@ -1,46 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2020-11-19T17:31:24.827Z" agent="5.0 (Windows)" etag="p94mXYmCzdwpgcoEBimV" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-19T20:10:49.858Z" agent="5.0 (Windows)" etag="z0ee5z3M4LdkYOL9p2TX" version="13.10.0" type="github">
   <diagram id="XtYsAUKYT_bLAtVYIACI" name="Page-1">
     <mxGraphModel dx="1422" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="lNLITgIDMI_T5WLQpihV-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xOCENPFB20Cj9OeKK77U-1" target="lNLITgIDMI_T5WLQpihV-1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="610" y="70" />
-              <mxPoint x="610" y="70" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-1" value="&lt;div&gt;Meldedaten von Vereinen&lt;/div&gt;&lt;div&gt;Name/Vorname/Jahrgang/Geschlecht/Gewicht/Priorität&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dateiformat *.xlxs&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="260" y="30" width="270" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="xOCENPFB20Cj9OeKK77U-1" target="xOCENPFB20Cj9OeKK77U-3" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="410" as="sourcePoint" />
-            <mxPoint x="395" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xOCENPFB20Cj9OeKK77U-3" target="xOCENPFB20Cj9OeKK77U-4" edge="1">
+        <mxCell id="lNLITgIDMI_T5WLQpihV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-4" target="lNLITgIDMI_T5WLQpihV-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-3" value="&lt;div&gt;Wiegeliste wird erstellt&lt;/div&gt;Dateiformat *.xlxs" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="335" y="160" width="120" height="60" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-4" value="Verein X" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="30" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xOCENPFB20Cj9OeKK77U-4" target="xOCENPFB20Cj9OeKK77U-6" edge="1">
+        <mxCell id="lNLITgIDMI_T5WLQpihV-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-9" target="lNLITgIDMI_T5WLQpihV-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-4" value="Wiegen - Realgewichte werden in Wiegeliste eingetragen" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="335" y="290" width="120" height="60" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-9" value="&lt;div&gt;Daten übermitteln&lt;/div&gt;&lt;div&gt;(Verein; Name; Vorname; Jahrgang; Geschlecht; Priorität)&lt;/div&gt;&lt;div&gt;in Meldeliste xlsx-Format&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="80" width="690" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xOCENPFB20Cj9OeKK77U-6" value="Wettkampfgruppen werden zugeordnet" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="335" y="430" width="120" height="60" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-12" target="lNLITgIDMI_T5WLQpihV-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2PjiRF5VNRsZALcjx6lF-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="430" width="120" height="60" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-12" value="&lt;div&gt;Meldedaten aller Vereine in einer Wiegeliste zusammenfassen&lt;/div&gt;&lt;div&gt;Wiegeliste in xlsx-Format&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="690" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="lNLITgIDMI_T5WLQpihV-1" value="Verein" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="685" y="40" width="120" height="60" as="geometry" />
+        <mxCell id="lNLITgIDMI_T5WLQpihV-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNLITgIDMI_T5WLQpihV-14" target="lNLITgIDMI_T5WLQpihV-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-14" value="Gewicht wird von Kampfricher:innen in die Wiegliste eingetragen" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="690" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-16" value="Kämper:innen nach Vorgaben in Gewichtsklassen einteilen und Wettkampflisten erstellen" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="270" width="690" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-18" value="Gewichtsklassen einteilung lt. Wettkampfordnung" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-19" value="Den Vereinen Losnummern zuteilen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-20" value="Den Vereinen Losnummern zuteilen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lNLITgIDMI_T5WLQpihV-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="280" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
